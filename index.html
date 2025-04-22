@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=close" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Engagement&family=Great+Vibes&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    
+
+
+
+<div class="main_box">
+<!-- SIDEBAR -->
+ 
+      <input type="checkbox" id="check" />
+      <div class="btn_one">
+        <label for="check">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+      </div>
+
+      <div class="sidebar_menu">
+        <div class="logo">
+          <a href="#">The Spotlight</a>
+        </div>
+        <div class="btn_two">
+          <label for="check">
+            <i class="fa-solid fa-xmark"></i>
+           </label>
+        </div>
+        <div class="menu">
+          <ul>
+            <!-- <li>
+              <i class="fa-solid fa-image"></i>
+              <a href="#">Gallery</a>
+            </li> -->
+
+            <li>
+              <label for="photoCheck" class="gallery-link">
+                <i class="fa-solid fa-image"></i>
+                Gallery
+                <!-- <a href="#">Gallery</a> -->
+              </label>
+            </li>
+            <li>
+              <label for="close_noti1" class="noti1-link">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              Shortcuts
+            </label>
+            </li>
+            
+
+            <li>
+              <label for="close_noti2" class="noti2-link">
+              <i class="fa-solid fa-photo-film"></i>
+              Exhibits
+            </label>
+            </li>
+            <li>
+              <label for="close_noti3" class="noti3-link">
+              <i class="fa-solid fa-calendar-days"></i>
+              Events
+            </label>
+            </li>
+
+            <li>
+              <label for="close_noti4" class="noti4-link">
+              <i class="fa-solid fa-store"></i>
+              Store
+            </label>
+            </li>
+
+            <li>
+              <label for="cont_info" class="contact-link">
+              <i class="fa-solid fa-phone"></i>
+              Contact
+            </label>
+            </li>
+
+            <!-- <li>
+              <i class="fa-regular fa-comments"></i>
+              <a href="#">Feedback</a>
+            </li> -->
+
+            <li>
+              <label for="feedbackcheck" class="feedback-link">
+                <i class="fa-regular fa-comments"></i>
+                Feedback
+              </label>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="social_media">
+          <ul>
+            <a href="#"><i class="fa-brands fa-facebook"></i></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </ul>
+        </div>
+      </div>
+    
+
+
+      <input type="checkbox" id="photoCheck" hidden />
+      <div class="btn_three">
+        <label for="photoCheck">
+          <span class="material-symbols-outlined close-icon">close</span>
+        </label>
+      </div>
+      
+      <input type="checkbox" id="feedbackcheck" hidden />
+      <div class="btn_four">
+        <label for="feedbackcheck">
+          <span class="material-symbols-outlined close_btn">close</span>
+        </label>
+      </div>
+
+      <input type="checkbox" id="close_noti1" hidden />
+      <div class="btn_five">
+        <label for="close_noti1">
+          <span class="material-symbols-outlined close_btn">close</span>
+        </label>
+      </div>
+
+      <input type="checkbox" id="close_noti2" hidden />
+      <div class="btn_six">
+        <label for="close_noti2">
+          <span class="material-symbols-outlined close_btn">close</span>
+        </label>
+      </div>
+
+      <input type="checkbox" id="close_noti3" hidden />
+      <div class="btn_seven">
+        <label for="close_noti3">
+          <span class="material-symbols-outlined close_btn">close</span>
+        </label>
+      </div>
+
+      <input type="checkbox" id="close_noti4" hidden />
+      <div class="btn_eight">
+        <label for="close_noti4">
+          <span class="material-symbols-outlined close_btn">close</span>
+        </label>
+      </div>
+
+      <!-- Contact info -->
+      <input type="checkbox" id="cont_info" hidden />
+      <div class="btn_nine">
+        <label for="cont_info">
+          <span class="material-symbols-outlined close_btn">close</span>
+        </label>
+      </div>
+
+
+<!-- CARDS -->
+
+  <h2 class="title_card">Here is a list of Animals</h2>
+<div class="container">
+  
+  <div class="animal-card">
+      <img src="panda.jpg" alt="Bao Bao the Panda" class="animal-img" />
+      <h2 class="animal-name">Bao Bao the Panda</h2>
+      <p class="animal-bio"><em>Lazy, cuddly, and always hungry.</em></p>
+      <p class="animal-description">
+        Bao Bao is a bamboo-loving panda who spends 14 hours a day munching on snacks.
+        He’s shy but loves playing in the snow and rolling down hills!
+      </p>
+      <ul class="animal-facts">
+        <li>🍃 Favorite Snack: Bamboo</li>
+        <li>🌎 Lives in: China</li>
+        <li>😴 Sleep Schedule: 12+ hours</li>
+      </ul>
+    </div>
+   <div class="animal-card">
+      <img src="lion.jpg" alt="Leo the Lion" class="animal-img" />
+      <h2 class="animal-name">Leo the Lion</h2>
+      <p class="animal-bio"><em>King of the jungle and a nap-time pro.</em></p>
+      <p class="animal-description">
+        Leo rules with confidence and charisma. He spends his days lounging in the savanna and perfecting his mighty roar!
+      </p>
+      <ul class="animal-facts">
+        <li>🍖 Favorite Snack: Wildebeest</li>
+        <li>🌍 Lives in: African Savanna</li>
+        <li>🔊 Hobby: Roaring at sunset</li>
+      </ul>
+    </div>
+    
+    <div class="animal-card">
+      <img src="elephant.jpg" alt="Ella the Elephant" class="animal-img" />
+      <h2 class="animal-name">Ella the Elephant</h2>
+      <p class="animal-bio"><em>Wise, graceful, and never forgets.</em></p>
+      <p class="animal-description">
+        Ella is a gentle giant who loves water and mud baths. She’s the matriarch of her herd and a natural leader.
+      </p>
+      <ul class="animal-facts">
+        <li>🌱 Favorite Snack: Sugarcane</li>
+        <li>🌍 Lives in: India</li>
+        <li>💧 Hobby: Splashing in rivers</li>
+      </ul>
+    </div>
+    
+    <div class="animal-card">
+      <img src="fox.jpg" alt="Flick the Fox" class="animal-img" />
+      <h2 class="animal-name">Flick the Fox</h2>
+      <p class="animal-bio"><em>Clever, sneaky, and full of charm.</em></p>
+      <p class="animal-description">
+        Flick enjoys nighttime strolls and hunting for adventure. He’s agile, quick-witted, and always curious.
+      </p>
+      <ul class="animal-facts">
+        <li>🐔 Favorite Snack: Eggs</li>
+        <li>🌍 Lives in: Woodlands</li>
+        <li>🌙 Hobby: Moonlit runs</li>
+      </ul>
+    </div>
+    
+    <div class="animal-card">
+      <img src="penguin.jpg" alt="Penny the Penguin" class="animal-img" />
+      <h2 class="animal-name">Penny the Penguin</h2>
+      <p class="animal-bio"><em>Cute, chill, and always dressed to impress.</em></p>
+      <p class="animal-description">
+        Penny waddles with style and slides like a pro on ice. She's loyal to her colony and loves snowball fights.
+      </p>
+      <ul class="animal-facts">
+        <li>🐟 Favorite Snack: Sardines</li>
+        <li>🌍 Lives in: Antarctica</li>
+        <li>❄️ Hobby: Ice skating</li>
+      </ul>
+    </div>
+    
+    <div class="animal-card">
+      <img src="giraffe.jpg" alt="Gigi the Giraffe" class="animal-img" />
+      <h2 class="animal-name">Gigi the Giraffe</h2>
+      <p class="animal-bio"><em>Tall, calm, and full of grace.</em></p>
+      <p class="animal-description">
+        Gigi uses her height to reach the tastiest leaves. She loves sunbathing and keeping a lookout for her herd.
+      </p>
+      <ul class="animal-facts">
+        <li>🍃 Favorite Snack: Acacia Leaves</li>
+        <li>🌍 Lives in: Kenya</li>
+        <li>🌞 Hobby: Watching sunsets</li>
+      </ul>
+    </div>
+    
+    <div class="animal-card">
+      <img src="bear.jpg" alt="Bruno the Bear" class="animal-img" />
+      <h2 class="animal-name">Bruno the Bear</h2>
+      <p class="animal-bio"><em>Sleepy but sweet-hearted.</em></p>
+      <p class="animal-description">
+        Bruno loves long naps, fresh berries, and cool caves. He's strong but loves a good cuddle.
+      </p>
+      <ul class="animal-facts">
+        <li>🍯 Favorite Snack: Honey</li>
+        <li>🌍 Lives in: Canada</li>
+        <li>😴 Hobby: Hibernating</li>
+      </ul>
+    </div>
+    
+    <div class="animal-card">
+      <img src="dog.jpg" alt="Max the Dog" class="animal-img" />
+      <h2 class="animal-name">Max the Dog</h2>
+      <p class="animal-bio"><em>Loyal, playful, and always wagging his tail.</em></p>
+      <p class="animal-description">
+        Max is everyone's best friend. He’s energetic, loves fetch, and never says no to treats.
+      </p>
+      <ul class="animal-facts">
+        <li>🦴 Favorite Snack: Chicken Biscuits</li>
+        <li>🌍 Lives in: Homes Everywhere</li>
+        <li>🎾 Hobby: Playing Fetch</li>
+      </ul>
+    </div>
+    
+    <div class="animal-card">
+      <img src="cat.jpg" alt="Milo the Cat" class="animal-img" />
+      <h2 class="animal-name">Milo the Cat</h2>
+      <p class="animal-bio"><em>Sassy, elegant, and always in control.</em></p>
+      <p class="animal-description">
+        Milo spends the day sunbathing and judging humans. He’s soft, stealthy, and fiercely independent.
+      </p>
+      <ul class="animal-facts">
+        <li>🐟 Favorite Snack: Tuna</li>
+        <li>🌍 Lives in: Cozy Windowsills</li>
+        <li>💤 Hobby: Power Naps</li>
+      </ul>
+    </div>
+    
+    <div class="animal-card">
+      <img src="owl.jpg" alt="Olive the Owl" class="animal-img" />
+      <h2 class="animal-name">Olive the Owl</h2>
+      <p class="animal-bio"><em>Silent flyer with big wisdom.</em></p>
+      <p class="animal-description">
+        Olive watches over the forest at night. She's mysterious, sharp-eyed, and a natural thinker.
+      </p>
+      <ul class="animal-facts">
+        <li>🐭 Favorite Snack: Mice</li>
+        <li>🌍 Lives in: Forest Trees</li>
+        <li>🌌 Hobby: Stargazing</li>
+      </ul>
+    </div>
+    
+    <div class="animal-card">
+      <img src="dolphin.jpg" alt="Daisy the Dolphin" class="animal-img" />
+      <h2 class="animal-name">Daisy the Dolphin</h2>
+      <p class="animal-bio"><em>Friendly, smart, and full of joy.</em></p>
+      <p class="animal-description">
+        Daisy loves flipping in the air and playing with waves. She’s sociable and sings under water.
+      </p>
+      <ul class="animal-facts">
+        <li>🐟 Favorite Snack: Herring</li>
+        <li>🌊 Lives in: Oceans</li>
+        <li>🎶 Hobby: Singing in sonar</li>
+      </ul>
+    </div>
+    
+    <div class="animal-card">
+      <img src="rabbit.jpg" alt="Nina the Rabbit" class="animal-img" />
+      <h2 class="animal-name">Nina the Rabbit</h2>
+      <p class="animal-bio"><em>Fast, fluffy, and full of hops.</em></p>
+      <p class="animal-description">
+        Nina is always exploring gardens and fields. She’s quick on her feet and loves carrots.
+      </p>
+      <ul class="animal-facts">
+        <li>🥕 Favorite Snack: Carrots</li>
+        <li>🌍 Lives in: Meadows</li>
+        <li>🏃‍♀️ Hobby: Racing shadows</li>
+      </ul>
+    </div>
+
+    <div class="animal-card">
+      <img src="parrot.jpg" alt="Polly the Parrot" class="animal-img" />
+      <h2 class="animal-name">Polly the Parrot</h2>
+      <p class="animal-bio"><em>Talkative, bright, and playful.</em></p>
+      <p class="animal-description">
+        Polly mimics voices and loves chatting with everyone. She’s the life of the treetops!
+      </p>
+      <ul class="animal-facts">
+        <li>🍎 Favorite Snack: Apple slices</li>
+        <li>🌴 Lives in: Tropical forests</li>
+        <li>🗣️ Hobby: Talking and whistling</li>
+      </ul>
+    </div>
+    
+    <div class="animal-card">
+      <img src="sparrow.jpg" alt="Sammy the Sparrow" class="animal-img" />
+      <h2 class="animal-name">Sammy the Sparrow</h2>
+      <p class="animal-bio"><em>Tiny, fast, and friendly.</em></p>
+      <p class="animal-description">
+        Sammy flits around houses and parks, chirping cheerfully with his flock.
+      </p>
+      <ul class="animal-facts">
+        <li>🍞 Favorite Snack: Bread crumbs</li>
+        <li>🏘️ Lives in: Cities and villages</li>
+        <li>🚀 Hobby: Speed flying</li>
+      </ul>
+    </div>
+    
+    <div class="animal-card">
+      <img src="peacock.jpg" alt="Peachy the Peacock" class="animal-img" />
+      <h2 class="animal-name">Peachy the Peacock</h2>
+      <p class="animal-bio"><em>Elegant, proud, and dazzling.</em></p>
+      <p class="animal-description">
+        Peachy dances in the rain, showing off his beautiful feathers with style.
+      </p>
+      <ul class="animal-facts">
+        <li>🌾 Favorite Snack: Grains</li>
+        <li>🌿 Lives in: Forest edges</li>
+        <li>💃 Hobby: Dancing in the rain</li>
+      </ul>
+    </div>
+    
+    <div class="animal-card">
+      <img src="hillmyna.jpg" alt="Milo the Hill Myna" class="animal-img" />
+      <h2 class="animal-name">Milo the Hill Myna</h2>
+      <p class="animal-bio"><em>Charming, talkative, and intelligent.</em></p>
+      <p class="animal-description">
+        Milo is a master mimic who loves copying sounds and chatting with people. He's the voice of the jungle!
+      </p>
+      <ul class="animal-facts">
+        <li>🍇 Favorite Snack: Fruits and insects</li>
+        <li>🌳 Lives in: Hill forests and wooded areas</li>
+        <li>🗣️ Hobby: Mimicking voices</li>
+      </ul>
+    </div>
+    
+    
+    <div class="animal-card">
+      <img src="eagle.jpg" alt="Eddie the Eagle" class="animal-img" />
+      <h2 class="animal-name">Eddie the Eagle</h2>
+      <p class="animal-bio"><em>Strong, sharp-eyed, and fearless.</em></p>
+      <p class="animal-description">
+        Eddie soars above mountains, spotting everything with his keen eyes.
+      </p>
+      <ul class="animal-facts">
+        <li>🐍 Favorite Snack: Small reptiles</li>
+        <li>🏔️ Lives in: Cliffs and mountains</li>
+        <li>🦅 Hobby: Soaring high</li>
+      </ul>
+    </div>
+    
+    <div class="animal-card">
+      <img src="flamingo.jpg" alt="Fiona the Flamingo" class="animal-img" />
+      <h2 class="animal-name">Fiona the Flamingo</h2>
+      <p class="animal-bio"><em>Graceful, pink, and elegant.</em></p>
+      <p class="animal-description">
+        Fiona stands on one leg and enjoys wading through shallow lakes with her friends.
+      </p>
+      <ul class="animal-facts">
+        <li>🦐 Favorite Snack: Shrimp</li>
+        <li>🏞️ Lives in: Wetlands and lagoons</li>
+        <li>🩰 Hobby: Posing for pictures</li>
+      </ul>
+    </div>
+    
+    <div class="animal-card">
+      <img src="woodpecker.jpg" alt="Wally the Woodpecker" class="animal-img" />
+      <h2 class="animal-name">Wally the Woodpecker</h2>
+      <p class="animal-bio"><em>Loud, busy, and hard-working.</em></p>
+      <p class="animal-description">
+        Wally drums on trees all day, building cozy homes in trunks.
+      </p>
+      <ul class="animal-facts">
+        <li>🐛 Favorite Snack: Tree insects</li>
+        <li>🌳 Lives in: Forests</li>
+        <li>🥁 Hobby: Tree tapping</li>
+      </ul>
+    </div>
+    
+    <div class="animal-card">
+      <img src="hummingbird.jpg" alt="Honey the Hummingbird" class="animal-img" />
+      <h2 class="animal-name">Honey the Hummingbird</h2>
+      <p class="animal-bio"><em>Tiny, fast, and energetic.</em></p>
+      <p class="animal-description">
+        Honey zips from flower to flower, sipping nectar with her speedy wings.
+      </p>
+      <ul class="animal-facts">
+        <li>🌸 Favorite Snack: Flower nectar</li>
+        <li>🌼 Lives in: Gardens and forests</li>
+        <li>⚡ Hobby: Hovering mid-air</li>
+      </ul>
+    </div>
+    
+    <div class="animal-card">
+      <img src="pigeons.jpg" alt="Perry the Pigeon" class="animal-img" />
+      <h2 class="animal-name">Perry the Pigeon</h2>
+      <p class="animal-bio"><em>Gentle, social, and quick to adapt.</em></p>
+      <p class="animal-description">
+        Perry is a city dweller who enjoys flying in flocks and finding cozy spots on rooftops. He’s calm and clever!
+      </p>
+      <ul class="animal-facts">
+        <li>🌽 Favorite Snack: Grains and seeds</li>
+        <li>🏙️ Lives in: Cities and town squares</li>
+        <li>✉️ Hobby: Exploring rooftops and open grounds</li>
+      </ul>
+    </div>
+    
+    
+    <div class="animal-card">
+      <img src="swan.jpg" alt="Sally the Swan" class="animal-img" />
+      <h2 class="animal-name">Sally the Swan</h2>
+      <p class="animal-bio"><em>Peaceful, graceful, and elegant.</em></p>
+      <p class="animal-description">
+        Sally glides across lakes like a feather on water, always calm and serene.
+      </p>
+      <ul class="animal-facts">
+        <li>🍃 Favorite Snack: Aquatic plants</li>
+        <li>🏞️ Lives in: Lakes and ponds</li>
+        <li>⛵ Hobby: Floating silently</li>
+      </ul>
+    </div>
+    
+
+</div> 
+
+
+<div class="feedback-box">
+  <h2>We value your Feedback!</h2>
+  <form class="feedback-form">
+    <label for="rating">Rate Us</label>
+    <select id="rating" name="rating" required>
+      <option value="" disabled selected>Select rating</option>
+      <option value="1">⭐ 1 - Poor</option>
+      <option value="2">⭐⭐ 2 - Fair</option>
+      <option value="3">⭐⭐⭐ 3 - Good</option>
+      <option value="4">⭐⭐⭐⭐ 4 - Very Good</option>
+      <option value="5">⭐⭐⭐⭐⭐ 5 - Excellent</option>
+    </select>
+    <label for="feedback">Your Feedback</label>
+    <textarea id="feedback" name="feedback" rows="5" placeholder="Share your thoughts..."></textarea>
+    <button type="submit">Submit Feedback</button>
+  </form>
+</div>
+
+<!-- NOTIFICATION -->
+
+<div class="notificationContainer"> 
+    
+<div class="notiShortcuts">
+  <h4>Shortcuts...</h4>
+  <p>More features coming soon... Scroll down to give feedback!</p>
+</div>
+
+<div class="notiExhibits">
+  <h4>Exhibits...</h4>
+  <p>More features coming soon... Scroll down to give feedback!</p>
+</div>
+
+<div class="notiEvents">
+  <h4> Events...</h4>
+  <p>More features coming soon... Scroll down to give feedback!</p>
+</div>
+
+<div class="notistore">
+  <h4>Store...</h4>
+  <p>More features coming soon... Scroll down to give feedback!</p>
+</div>
+
+</div>
+
+<!-- <div class="content">
+  <h2>Scroll down to give your feedback ⬇️</h2>
+</div> -->
+
+<div class="card">
+  <!-- <h2>Contact Info</h2> -->
+  <h2>Get in Touch</h2>
+
+  <div class="info-item">
+    <span class="label">Name:</span>
+    <span class="value">Sudipta Khanra</span>
+  </div>
+  
+  <div class="info-item">
+    <span class="label">Email:</span>
+    <span class="value"><a href="mailto:sudipta@example.com">sudipta@example.com</a></span>
+  </div>
+  <div class="info-item">
+    <span class="label">Phone:</span>
+    <span class="value">+91 xxxxx xxxxx</span>
+  </div>
+  <div class="info-item">
+    <span class="label">Location:</span>
+    <span class="value">Kolkata, India</span>
+  </div>
+
+</div>
+</div>
+
+  </body>
+</html>
